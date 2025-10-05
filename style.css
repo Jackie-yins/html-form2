@@ -1,0 +1,152 @@
+/* variables */
+:root {
+  --primary-blue: #2563eb;
+  --primary-dark: #1e40af;
+  --primary-light: #3b82f6;
+  --bg: #f9fafb;
+  --white: #ffffff;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --border: #d1d5db;
+  --border-focus: #2563eb;
+  --success: #10b981;
+  --error: #ef4444;
+  --warning: #f59e0b;
+  --accent-purple: #8b5cf6;
+  --accent-pink: #ec4899;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY & LAYOUT */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-dark);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/*container */
+
+form {
+  background-color: var(--white);
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  text-align: center;
+  color: var(--primary-dark);
+  margin-bottom: 15px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+/* LABELS & INPUTS */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--border-focus);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+}
+
+::placeholder {
+  color: var(--text-light);
+}
+
+/* CHECKBOXES & RADIOS  */
+input[type="checkbox"], input[type="radio"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+/* RANGE SLIDER*/
+input[type="range"] {
+  accent-color: var(--primary-blue);
+}
+
+/* BUTTONS */
+button {
+  margin-top: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary-dark);
+}
+
+button[type="reset"] {
+  background-color: var(--accent-pink);
+  color: var(--white);
+  border: none;
+}
+
+button[type="reset"]:hover {
+  background-color: var(--accent-purple);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 20px;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  form {
+    padding: 20px;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}

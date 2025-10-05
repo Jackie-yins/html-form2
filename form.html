@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>User Registration Form</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <!--Personal Information-->
+            <section>
+                <h2>Personal Information</h2>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required><br><br>
+
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob"><br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="0"><br><br>
+                    <fieldset>                    
+                        <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br><br>
+                    </fieldset>
+
+                    <label for="photo">Profile Photo</label>
+                    <input type="file" id="photo" name="photo"><br><br>
+            </section>
+
+            <!--Contact & Address-->
+            <section>
+                <h2>Contact & Address Information</h2>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <label for="website">Personal website:</label>
+                <input type="url" id="website" name="website"
+                placeholder="https://jackie-yins.com"><br><br>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city"><br><br>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select Country</option>
+                    <option>Kenya</option>
+                    <option>Uganda</option>
+                    <option>Tanzania</option>
+                    <option>Other</option>
+                    </select><br><br>
+
+                    <label for="zip">ZIP/Postal Code:</label>
+                    <input type="text" id="zip" name="zip"><br><br>
+
+                    <label for="ptime">Preferred Time:</label>
+                    <input type="time" id="ptime" name="ptime"><br><br>
+              </section>
+
+              <!--Preferences & Interests-->
+              <section>
+                <h2>Preferences & Interest</h2>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color"><br><br>
+
+                <label for="exp">Experience Level [1-10]:</label>
+                <input type="range" id="exp" name="exp" min="1" max="10"><br><br>
+
+                <label for="bmonth">Birth Month:</label>
+                <input type="month" id="bmonth" name="bmonth"><br><br>
+
+                <label for="aweek">Available Week:</label>
+                <input type="week" id="aweek" name="aweek"><br><br>
+
+                <label for="keywords">Search Keywords:</label>
+                <input type="search" id="keywords" name="keywords"><br><br>
+
+                <p>Interests {Select all that apply}:</p>
+                <input type="checkbox" id="tech" name="interest[]" value="Technology">
+                <label for="tech">Technology</label>
+
+                <input type="checkbox" id="sports" name="interest" value="sports">
+                <label for="sports">Sports</label>
+
+                <input type="checkbox" id="music" name="interest" value="Music">
+                <label for="music">Music</label>
+
+                <input type="checkbox" id="travel" name="interest" value="Travel">
+                <label for="travel">Travel</label>
+
+                <input type="checkbox" id="reading" name="interest" value="Reading">
+                <label for="reading">Reading</label>
+
+                <input type="checkbox" id="cooking" name="interest" value="Cooking">
+                <label for="cooking">Cooking</label><br><br>
+
+                <label for="edu">Education Level:</label>
+                <select id="edu" name="edu">
+                    <option value="">Select Education Level</option>
+                    <option>High School</option>
+                    <option>Diploma</option>
+                    <option>Bachelor's</option>
+                    <option>Master's</option>
+                    <option>PhD</option>
+                </select><br><br>
+
+                <label for="pass">Create Password:</label>
+                <input type="password" id="pass" name="pass" required><br><br>
+
+                <label for="cpass">Confirm Password:</label>
+                <input type="password" id="cpass" name="cpass" required><br><br>
+              </section>
+
+              <!--Feedback-->
+              <section>
+                <h2>Feedback & Additional Information</h2>
+                <label for="bio">Tell us about yourself:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Write a brief description about yourself..."></textarea><br><br>
+
+                <label for="suggestions">Suggestions for improvement:</label><br>
+                <textarea id="suggestions" name="suggestions" rows="4" cols="40"
+                placeholder="Any suggestions or Feedback..."></textarea><br><br>
+                
+                <label for="regdate">Registration Date & Time:</label>
+                <input type="datetime-local" id="regdate" name="regdate"><br><br>
+
+                <label for="source">How did you hear about us?</label>
+                <select id="source" name="source">
+                    <option value="">Select Source</option>
+                    <option>Social Media</option>
+                    <option>Friend</option>
+                    <option>Advertisement</option>
+                    <option>Other</option>
+                    </select>
+
+                    <label for="resume">Upload Resume{optional}:</label>
+                    <input type="file" id="resume" name="resume"><br><br>
+
+                    <p>Subscribe to our newsletter:</p>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Yes,please subscribe!</label><br><br>
+
+                    <p>Agree to Terms & Conditions:</p>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions</label><br><br>
+
+                    <p>Agree to Privacy Policy:</p>
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">I agree to the Privacy Policy</label><br><br>
+
+                    <button type="submit">Register</button>
+                    <button type="reset">Clear Form</button>
+              </section>
+        </form>
+    </main>
+
+    <footer>
+        <p> &copy; 2025 Jackie Project</p>
+    </footer>
+</body>
+</html>
