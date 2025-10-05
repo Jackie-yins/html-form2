@@ -77,7 +77,7 @@ The goal is to demonstrate mastery of *layout techniques, input styling, button 
 
 ## Screenshot
 Here's how the styled user registration form looks:
-![User Registration Form Preview](/Screenshot.png)
+![User Registration Form Preview](/screenshot.png)
 
 
 ## 👩‍💻 Author
